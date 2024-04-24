@@ -1,0 +1,18 @@
+@DEPLOY.MinimalAPI.Projeto_HostAddress = http://localhost:5039
+
+GET {{DEPLOY.MinimalAPI.Projeto_HostAddress}}/todoitems
+Accept: application/json
+
+###
+POST {{DEPLOY.MinimalAPI.Projeto_HostAddress}}/todoitems
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Item1",
+  "isComplete": false
+}
+
+###
+DELETE {{DEPLOY.MinimalAPI.Projeto_HostAddress}}/todoitems/1
+Accept-Language: en-US
